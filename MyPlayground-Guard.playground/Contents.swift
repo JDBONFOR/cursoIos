@@ -21,3 +21,22 @@ func plusplus(a:Int?, b:Int?){
     */
 }
 plusplus(a: 12, b: nil);
+
+
+
+
+// MARK: Explicado por BRAIS
+// Sailda rapida, guard let... condicion verdadera si o si para ejecutar sino, sale del codigo
+
+var myOptionalStringGuard: String?
+func myFunction() {
+    guard let myString = myOptionalStringGuard else {
+        print("El valor de myString es nil")
+        return
+    }
+    
+    print("El valor de myString es \(myString)")
+}
+myFunction()
+myOptionalStringGuard = "Que os parece Guard?"
+myFunction()
